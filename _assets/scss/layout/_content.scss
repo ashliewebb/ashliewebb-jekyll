@@ -1,0 +1,11 @@
+.content {
+  ul {
+    @extend .list;
+    @extend .list--disc;
+
+    .portfolio & {
+      @extend .list;
+      @extend .list--arrow;
+    }
+  }
+}

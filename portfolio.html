@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<h1>Portfolio</h1>
+<h2>Finely crafted online experiences</h2>
+<p>A collection that includes websites across many sectors including, retail, public, services and B2B.</p>
+<p>Most recently I have contributed to the following sites:</p>
+<ul class="list list--arrow">
+  {% for post in site.categories.portfolioTop %}
+    <li class="portfolio-item">
+      <span class="portfolio-item__name"><a href="//{{ post.summary }}" title="Visit the {{ post.title }} website">{{ post.title }}</a></span>
+      <p class="portfolio-item__desc">{{ post.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<p><br />
+  Over the years I have built and contributed to the following websites:</p>
+<ul class="list list--arrow">
+  {% for post in site.categories.portfolio %}
+    <li class="portfolio-item">
+      <span class="portfolio-item__name"><a href="//{{ post.summary }}" title="Visit the {{ post.title }} website">{{ post.title }}</a></span>
+      <p class="portfolio-item__desc">{{ post.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
