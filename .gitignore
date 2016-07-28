@@ -3,3 +3,7 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules/
+
+# ignore full portfolio pages as they are not linked to
+_assets/portfolio/
+_assets/portfoliotop/
