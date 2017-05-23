@@ -7,4 +7,9 @@
     &__desc {
         padding-left: 35px;
     }
+
+    a {
+        @extend .primary-link;
+        @extend .primary-link--underline;
+    }
 }

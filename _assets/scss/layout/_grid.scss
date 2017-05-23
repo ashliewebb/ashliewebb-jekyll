@@ -51,12 +51,12 @@
 
     }
 
-    &--7-shift {
+    &--9-shift {
         @include outer-container;
 
-        > .column-7 {
+        > .column-9 {
             @include media(get-layout(large)) {
-                @include span-columns(7);
+                @include span-columns(9);
                 @include shift(3);
             }
         }

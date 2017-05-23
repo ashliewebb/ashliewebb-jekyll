@@ -42,7 +42,7 @@ h2 {
     clear: both;
     display: inline-block;
     font-family: $courier-new;
-    font-size: em(17px);
+    @include font-size(17);
     letter-spacing: 2px;
     margin: $base-spacing-unit 0;
     text-transform: uppercase;
@@ -54,7 +54,7 @@ h2 {
 
 h3 {
     font-family: $karla;
-    font-size: em(18px);
+    @include font-size(18);
     font-weight: 700;
     margin: em(22px) 0 em(8px);
 }

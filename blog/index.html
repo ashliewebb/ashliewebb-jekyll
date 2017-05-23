@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1>Blog</h1>
+<h2>Writing, speaking, UX, frontend</h2>
+<ul class="list list--arrow">
+  {% for post in site.categories.blog %}
+    <li class="portfolio-item">
+      <span class="portfolio-item__name"><a href="{{ post.slug }}" title="Visit the {{ post.title }} website">{{ post.title }}</a></span>
+      <p class="portfolio-item__desc">{{ post.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
+<div class="idf-widget" style="margin-top: 70px;text-align: center; border-top: 2px solid #c7cf74; padding-top: 25px">
+  <a href="https://www.interaction-design.org/invite?r=ashlie-webb" target="_blank">
+    <img src="https://public-media.interaction-design.org/images/idf-logo-full.svg" style="height:90px; display:block; margin-left:auto; margin-right:auto; margin-bottom:20px;"></a>
+  <p style="padding-bottom: 20px;">I am a member of the Interaction Design Foundation  of the Interaction Design Foundation, the world’s largest UX Design learning community.</p>
+  <p><a href="https://www.interaction-design.org/invite?r=ashlie-webb" target="_blank">Get 3 months of free membership to learn UX Design here!</a></p>
+</div>

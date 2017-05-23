@@ -8,4 +8,10 @@
       @extend .list--arrow;
     }
   }
+
+  p,
+  ul,
+  ol {
+    @include font-size(15);
+  }
 }
